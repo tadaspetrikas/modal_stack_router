@@ -1,6 +1,10 @@
+## 1.0.3
+
+* Use main modal_bottom_sheet lib now that route settings are exposed.
+
 ## 1.0.2
 
-* Update readme/example after stack router change
+* Use fork of modal_bottom_sheet for exposing route settings
 
 ## 1.0.1
 

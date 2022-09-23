@@ -2,7 +2,6 @@ library modal_stack_router;
 
 import 'package:flutter/material.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
-import 'package:stack_router/stack_router.dart';
 
 export 'package:stack_router/stack_router.dart';
 
@@ -31,6 +30,10 @@ Future<T?> showModalStackRouter<T>({
     builder: (context) => child,
     duration: Duration.zero,
     enableDrag: false,
+    // Since Navigator will only revert the route changes made by the stack router
+    // on pop() if the modal was announced with a route name other than the current name,
+    // we take the current route name and append whitespace to trigger the resetting.
+    settings: RouteSettings(name: '${Uri.base.path} '),
     containerWidget: (_, animation, child) {
       return Container(
         alignment: Alignment.topCenter,
