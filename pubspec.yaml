@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
   modal_bottom_sheet: ^2.1.2
-  stack_router: ^1.0.3
+  stack_router: ^1.0.7
 
 dev_dependencies:
   flutter_test:

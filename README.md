@@ -1,6 +1,6 @@
 # Modal stack router
 
-A Flutter library for creating modal flows and wizards commonly used on large screen devices like desktop web. Uses [modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet) for showing widgets in a modal and [stack_router](https://pub.dev/packages/stack_router) for building complex flows.
+A Flutter library for creating modal flows and wizards commonly used on large screen platforms like desktop web. It uses [modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet) for showing widgets in a modal and the [stack_router](https://pub.dev/packages/stack_router) library for building multi-step flows.
 
 ![Basic demo gif](./demo.gif).
 
