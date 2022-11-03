@@ -23,11 +23,14 @@ Future<T?> showModalStackRouter<T>({
 
   /// The border radius of the modal.
   BorderRadiusGeometry? borderRadius,
+
+  /// A builder used to wrap the modal stack router widget.
+  Widget Function(BuildContext context)? builder,
 }) {
   return showCustomModalBottomSheet<T>(
     barrierColor: barrierColor,
     context: context,
-    builder: (context) => child,
+    builder: (context) => builder?.call(context) ?? child,
     duration: Duration.zero,
     enableDrag: false,
     // Since Navigator will only revert the route changes made by the stack router
