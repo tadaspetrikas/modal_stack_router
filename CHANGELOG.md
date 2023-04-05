@@ -1,3 +1,7 @@
+## 1.0.4
+
+Bump dependency.
+
 ## 1.0.3
 
 * Use main modal_bottom_sheet lib now that route settings are exposed.
