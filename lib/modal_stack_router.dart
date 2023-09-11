@@ -39,7 +39,7 @@ Future<T?> showModalStackRouter<T>({
     settings: RouteSettings(name: '${Uri.base.path} '),
     containerWidget: (_, animation, child) {
       return Container(
-        alignment: Alignment.topCenter,
+        alignment: alignment,
         margin: margin,
         child: Material(
           clipBehavior: Clip.antiAliasWithSaveLayer,
