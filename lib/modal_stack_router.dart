@@ -24,6 +24,9 @@ Future<T?> showModalStackRouter<T>({
   /// The border radius of the modal.
   BorderRadiusGeometry? borderRadius,
 
+  // Control of modal dismiss behavior
+  bool isDismissible = true,
+
   /// A builder used to wrap the modal stack router widget.
   Widget Function(BuildContext context)? builder,
 }) {
@@ -33,6 +36,7 @@ Future<T?> showModalStackRouter<T>({
     builder: (context) => builder?.call(context) ?? child,
     duration: Duration.zero,
     enableDrag: false,
+    isDismissible: isDismissible,
     // Since Navigator will only revert the route changes made by the stack router
     // on pop() if the modal was announced with a route name other than the current name,
     // we take the current route name and append whitespace to trigger the resetting.
