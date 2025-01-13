@@ -27,34 +27,6 @@ class ResponsiveMarginConfig {
     this.bottom,
     this.height,
   });
-
-  // EdgeInsets getMargins(double screenWidth) {
-  //   final horizontalMargin = screenWidth < mobileScreenBreakpoint
-  //       ? screenWidth * mobileMarginPercent
-  //       : screenWidth * desktopMarginPercent;
-
-  //   if (left != null || top != null || right != null || bottom != null) {
-  //     return EdgeInsets.only(
-  //       left: left ?? horizontalMargin,
-  //       top: top ?? verticalMargin,
-  //       right: right ?? horizontalMargin,
-  //       bottom: bottom ?? verticalMargin,
-  //     );
-  //   }
-
-  //   return EdgeInsets.symmetric(
-  //     vertical: verticalMargin,
-  //     horizontal: horizontalMargin,
-  //   );
-  // }
-
-  // BoxConstraints getConstraints() {
-  //   if (height != null) {
-  //     return BoxConstraints.tightFor(height: height);
-  //   }
-  //   // When no height is specified, use loose constraints to allow content sizing
-  //   return const BoxConstraints(minHeight: 0.0);
-  // }
 }
 
 Future<T?> showModalStackRouter<T>({
